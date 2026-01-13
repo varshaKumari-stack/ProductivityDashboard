@@ -1,0 +1,1039 @@
+section.allelems nav {
+  position: fixed;
+  top: 3%;
+  width: calc(100% - 2rem);
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  background-color: var(--bgrey);
+}
+section.allelems nav .nav-in {
+  padding: 1rem 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.allelems nav .nav-in .work {
+  font-family: cyr;
+  font-size: 2rem;
+  text-shadow: 2px 2px 3px #6b6a6a;
+  -webkit-text-stroke: 1px rgba(240, 244, 245, 0.7333333333);
+  color: transparent;
+}
+section.allelems nav .nav-in button {
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: var(--sec);
+  color: var(--pri);
+  font-family: cyr;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+section.allelems nav .nav-in button:active {
+  color: var(--gray);
+  scale: 0.8;
+}
+section.allelems nav .nav-in button:hover {
+  background-color: var(--darkest);
+  color: var(--sec);
+}
+section.allelems nav .nav-in .links {
+  gap: 1.5rem;
+  display: flex;
+  position: relative;
+}
+section.allelems nav .nav-in a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-family: cyr;
+  color: var(--nav);
+  font-weight: 500;
+  padding: 8px 0;
+}
+section.allelems nav .nav-in a::before,
+section.allelems nav .nav-in a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #6b6a6a;
+  transition: all 0.5s ease;
+}
+section.allelems nav .nav-in a::before {
+  top: 0;
+  left: 0;
+}
+section.allelems nav .nav-in a::after {
+  bottom: 0;
+  right: 0;
+}
+section.allelems nav .nav-in a:hover::before,
+section.allelems nav .nav-in a:hover::after {
+  width: 100%;
+}
+section.allelems nav .nav-in :hover {
+  color: #c6c6c6;
+}
+
+section.allelems {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+}
+section.allelems .allFeatures {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0.4rem;
+}
+section.allelems .elem {
+  background-color: var(--tri2);
+  overflow: hidden;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  height: 270px;
+  width: 270px;
+  position: relative;
+  transition: all ease 0.5s;
+  box-shadow: rgba(142, 141, 141, 0.762) 0px 3px 6px, rgba(46, 46, 46, 0.712) 0px 3px 6px;
+  margin-left: 1.6rem;
+}
+section.allelems .elem:active {
+  scale: 0.95;
+}
+section.allelems .elem video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+section.allelems .elem h2 {
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  color: rgb(224, 230, 230);
+  font-family: areg;
+}
+
+section.allelems header {
+  height: 40%;
+  width: calc(100% - 1.5rem);
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  background: url("../header.jpg");
+  background-size: cover;
+  position: fixed;
+}
+section.allelems header .header1 h2 {
+  font-size: 2rem;
+  font-family: areg;
+  color: var(--llwhite);
+}
+section.allelems header .header1 h3 {
+  font-size: 2rem;
+  font-family: areg;
+  color: var(--llwhite);
+}
+section.allelems header .header1 span {
+  color: var(--yellow);
+  font-family: areg;
+}
+section.allelems header .header2 h2 {
+  font-size: 4rem;
+  color: var(--white);
+  font-family: areg;
+}
+section.allelems header .header2 h3 {
+  font-size: 3rem;
+  text-align: right;
+  font-family: CYR;
+  color: var(--cyan);
+  font-weight: 300;
+}
+section.allelems header .header2 form {
+  text-align: right;
+  margin-top: 1rem;
+}
+section.allelems header .header2 form input {
+  background-color: var(--lred);
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+  font-family: cyr;
+  font-size: 1.4rem;
+  color: var(--crimson);
+  font-weight: 800;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+}
+section.allelems header .header2 form h4 {
+  font-size: 2.5rem;
+  text-align: right;
+  font-family: areg;
+  color: var(--crimson);
+}
+
+section.fullelem {
+  width: 100%;
+  height: 100%;
+  background: var(--pri);
+  display: none;
+  position: absolute;
+  padding: 1rem;
+}
+section.fullelem .back {
+  position: absolute;
+  right: 3%;
+  top: 4%;
+  padding: 0.6rem 2rem;
+  color: var(--white);
+  font-size: 2rem;
+  font-family: areg;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  border: none;
+  background: var(--orange);
+  box-shadow: 2px 2px 8px rgba(219, 207, 207, 0.7176470588);
+  transition: all 0.4s linear;
+}
+section.fullelem .back:active {
+  scale: 0.9;
+  border-radius: 1rem;
+  color: var(--pri);
+}
+
+section.fullelem.todo-fullPage {
+  background-color: var(--ran);
+}
+section.fullelem.todo-fullPage h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: dance;
+  background-image: url("../todo.avif");
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+}
+section.fullelem.todo-fullPage .todo-container {
+  height: 80%;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.fullelem.todo-fullPage .todo-container .addTask {
+  width: 33%;
+  height: 100%;
+  background: var(--tri1);
+  border-radius: 1rem;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form #task-imp,
+section.fullelem.todo-fullPage .todo-container .addTask form textarea,
+section.fullelem.todo-fullPage .todo-container .addTask form button {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 1.7em;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  background: var(--tri2);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form #task-imp,
+section.fullelem.todo-fullPage .todo-container .addTask form textarea {
+  color: #2f5c5d;
+  font-family: areg;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form button {
+  background: var(--sec);
+  color: var(--tri1);
+  transition: all ease 0.3s;
+  font-family: rock;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form button:active {
+  scale: 0.9;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form .mark-imp {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 0.7em;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form .mark-imp input {
+  width: 20px;
+  height: 20px;
+}
+section.fullelem.todo-fullPage .todo-container .addTask form .mark-imp label {
+  font-size: 1.2rem;
+  font-family: CYR;
+}
+section.fullelem.todo-fullPage .todo-container .allTask {
+  width: 65%;
+  height: 100%;
+  background: var(--tri1);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 2rem;
+}
+section.fullelem.todo-fullPage .todo-container .allTask .task {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: var(--tri2);
+  padding: 1rem;
+  border-radius: 0.5em;
+}
+section.fullelem.todo-fullPage .todo-container .allTask .task .detail {
+  position: relative;
+}
+section.fullelem.todo-fullPage .todo-container .allTask .task .detail summary {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--tri1);
+  margin-bottom: 1rem;
+  font-family: abold;
+}
+section.fullelem.todo-fullPage .todo-container .allTask .task .detail p {
+  font-size: 1rem;
+  color: rgba(8, 55, 74, 0.692);
+  position: absolute;
+  left: 1rem;
+  right: -1rem;
+  bottom: -1.3rem;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  font-family: CYR;
+}
+section.fullelem.todo-fullPage .todo-container .allTask .task span {
+  padding: 0.2rem 0.4rem;
+  background: var(--btn);
+  border-radius: 0.5em;
+  font-size: 1.3em;
+  color: var(--white);
+  font-weight: 800;
+}
+section.fullelem.todo-fullPage .todo-container .allTask .task span.true {
+  opacity: 1;
+}
+section.fullelem.todo-fullPage .todo-container .allTask .task span.false {
+  opacity: 0;
+}
+section.fullelem.todo-fullPage .todo-container .allTask button {
+  padding: 1rem 1.3rem;
+  background-color: var(--grayc);
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  color: var(--white);
+  font-weight: 700;
+  transition: all ease 0.3s;
+  margin-left: 1rem;
+  font-family: areg;
+}
+section.fullelem.todo-fullPage .todo-container .allTask button:active {
+  scale: 0.9;
+}
+
+section.fullelem.dailyPlan-fullPage {
+  background-color: var(--ran);
+}
+section.fullelem.dailyPlan-fullPage h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: dance;
+  background-image: url("../study.jfif"); /* Or a gradient */
+  background-size: cover;
+  -webkit-background-clip: text; /* For Chrome/Safari */
+  background-clip: text;
+  color: transparent;
+}
+section.fullelem.dailyPlan-fullPage .day-planner {
+  background: var(--tri1);
+  margin-top: 2rem;
+  height: 85%;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: auto;
+}
+section.fullelem.dailyPlan-fullPage .day-planner .day-time {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1em;
+  width: 49.6%;
+}
+section.fullelem.dailyPlan-fullPage .day-planner .day-time p {
+  position: absolute;
+  top: 12%;
+  left: 1%;
+  font-size: 1em;
+  color: var(--pri);
+  font-weight: 700;
+  font-family: CYR;
+}
+section.fullelem.dailyPlan-fullPage .day-planner .day-time input {
+  padding: 1rem 2.5rem;
+  background-color: var(--tri2);
+  width: 100%;
+  padding-top: 1.9rem;
+  border-radius: 0.3em;
+  border: none;
+  font-size: 1.5em;
+  outline: none;
+  color: var(--dpurple);
+  font-weight: 600;
+  font-family: wooden;
+  text-transform: capitalize;
+}
+
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+section.fullelem.motivation-fullPage {
+  background-color: var(--ran);
+}
+section.fullelem.motivation-fullPage h2 {
+  margin-top: -1rem;
+  font-size: 6rem;
+  text-transform: capitalize;
+  background-image: url("../quote.jfif"); /* Or a gradient */
+  background-size: cover;
+  -webkit-background-clip: text; /* For Chrome/Safari */
+  background-clip: text;
+  color: transparent;
+  font-family: dance;
+}
+section.fullelem.motivation-fullPage .motive-wrapper {
+  width: 50%;
+  height: 350px;
+  background: linear-gradient(to top left, var(--darkblack), var(--dgray));
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 1rem;
+  padding: 1rem;
+  animation: box 6s ease-in-out infinite;
+  box-shadow: 0px 0px 16px var(--egreen), 0px 0px 16px var(--corn);
+}
+section.fullelem.motivation-fullPage .motive-wrapper #head {
+  font-size: 4rem;
+  padding: 0.2rem;
+  text-align: center;
+  background: var(--tri2);
+  color: var(--agray);
+  border-radius: 1rem;
+  font-family: wal;
+  margin-top: 0.1rem;
+}
+section.fullelem.motivation-fullPage .motive-wrapper .quote {
+  margin-top: 1rem;
+  position: relative;
+}
+section.fullelem.motivation-fullPage .motive-wrapper .quote p {
+  font-size: 1.3rem;
+  color: var(--sec);
+  font-weight: 600;
+  position: relative;
+  padding-left: 2rem;
+  font-family: areg;
+}
+section.fullelem.motivation-fullPage .motive-wrapper .quote .left {
+  font-size: 1rem;
+}
+section.fullelem.motivation-fullPage .motive-wrapper .quote .right {
+  position: absolute;
+}
+section.fullelem.motivation-fullPage .motive-wrapper .auth {
+  position: relative;
+}
+section.fullelem.motivation-fullPage .motive-wrapper .auth p {
+  font-family: rock;
+  position: absolute;
+  right: 0%;
+  bottom: -6rem;
+  font-size: 2rem;
+  color: var(--aqua);
+  background: var(--tri1);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+section.fullelem.motivation-fullPage::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: var(--egreen);
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(6px);
+  top: 13%;
+  left: 20%;
+  animation: animate 6s ease-in-out infinite alternate;
+}
+section.fullelem.motivation-fullPage::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: var(--corn);
+  border-radius: 50%;
+  position: absolute;
+  right: 18%;
+  bottom: 15%;
+  filter: blur(6px);
+  animation: animate 6s ease-in-out infinite alternate;
+}
+
+@font-face {
+  font-family: CYR;
+  src: url("../fonts/BC_Novatica_CYR_Regular.otf");
+}
+@font-face {
+  font-family: PG;
+  src: url("../fonts/Breakdown PG.otf");
+}
+@font-face {
+  font-family: Onetwo;
+  src: url("../fonts/CfOneTwoTreesRegular-4LGp.ttf");
+}
+@font-face {
+  font-family: dance;
+  src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: abold;
+  src: url("../fonts/fonnts.com-Aeonik-Bold.ttf");
+}
+@font-face {
+  font-family: areg;
+  src: url("../fonts/fonnts.com-Aeonik-Regular.ttf");
+}
+@font-face {
+  font-family: libre;
+  src: url("../fonts/LibreFranklin-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: rock;
+  src: url("../fonts/NewRocker-Regular.ttf");
+}
+@font-face {
+  font-family: rage;
+  src: url("../fonts/RoadRage-Regular.ttf");
+}
+@font-face {
+  font-family: RP;
+  src: url("../fonts/SuperchargeStraightCondensed-RpVWV.otf");
+}
+@font-face {
+  font-family: under;
+  src: url("../fonts/UnderThreatDemo-vnVD4.ttf");
+}
+@font-face {
+  font-family: wal;
+  src: url("../fonts/waltograph42.otf");
+}
+@font-face {
+  font-family: wooden;
+  src: url("../fonts/Wooden Log.ttf");
+}
+@keyframes grid {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(40px, 40px);
+  }
+}
+section.fullelem.pomodoro-fullPage {
+  background-color: var(--ran);
+  overflow: hidden;
+}
+section.fullelem.pomodoro-fullPage h2 {
+  background-image: url("../pomo.avif");
+  background-size: cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: dance;
+}
+section.fullelem.pomodoro-fullPage .pomo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section.fullelem.pomodoro-fullPage .pomo .bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-image: linear-gradient(rbga(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rbga(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid 30s linear infinite;
+  -webkit-animation: grid 30s linear infinite;
+}
+section.fullelem.pomodoro-fullPage .pomo .container {
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  padding: 2rem;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper {
+  position: relative;
+  display: inline-block;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .progress-ring {
+  transform: rotate(-90deg);
+  width: 300px;
+  height: 300px;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .progress-ring .progress-ring-circle {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 6;
+  fill: transparent;
+  r: 140;
+  cx: 150;
+  cy: 150;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .progress-ring .progress-ring-progress {
+  stroke: var(--white);
+  stroke-width: 6;
+  stroke-dasharray: 911;
+  stroke-dashoffset: 911;
+  fill: transparent;
+  r: 140;
+  cx: 150;
+  cy: 150;
+  transition: stroke-dashoffset 1s ease;
+  stroke-linecap: round;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .progress-ring .progress-ring-progress.work {
+  stroke: var(--lorange);
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .progress-ring .progress-ring-progress.break {
+  stroke: var(--lblue);
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .timer-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .timer-display .time {
+  font-size: 4rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+  font-variant-numeric: tabular-nums;
+  font-family: CYR;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .time-wrapper .timer-display .session-time {
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--sea);
+  font-family: abold;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .controls {
+  display: flex;
+  gap: 1.4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .controls .btn {
+  background: linear-gradient(to top left, rgba(3, 3, 3, 0), rgba(255, 255, 255, 0));
+  border: 2px solid rgba(123, 123, 123, 0.61);
+  color: var(--llgrn);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  font-weight: 900;
+  transition: all 0.3s ease;
+  font-family: wal;
+  filter: brightness(0.5);
+}
+section.fullelem.pomodoro-fullPage .pomo .container .controls .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 4, 4, 0.267);
+  transition: all 0.5s ease;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .controls .btn:hover {
+  background: rgba(35, 76, 72, 0.438);
+  transform: translateY(-2px);
+}
+section.fullelem.pomodoro-fullPage .pomo .container .controls .btn:active {
+  scale: 0.9;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .controls .btn:hover::before {
+  left: 100%;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .settings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 2rem;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .settings .setting-grp {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .settings .setting-grp .setting-label {
+  font-size: 1.5em;
+  font-weight: 300;
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-family: abold;
+  color: var(--tri2);
+}
+section.fullelem.pomodoro-fullPage .pomo .container .settings .setting-grp .setting-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .settings .setting-grp .setting-controls .setting-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: var(--lgrn);
+  width: 32px;
+  height: 32px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+  font-family: wooden;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .settings .setting-grp .setting-controls .setting-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+section.fullelem.pomodoro-fullPage .pomo .container .settings .setting-grp .setting-controls .setting-val {
+  font-size: 2rem;
+  max-width: 300;
+  font-weight: 300;
+  text-align: center;
+  font-family: areg;
+  color: rgba(188, 188, 188, 0.9764705882);
+}
+section.fullelem.pomodoro-fullPage .pomo .container .notification {
+  position: fixed;
+  right: 2rem;
+  top: 14rem;
+  background: rgba(118, 118, 118, 0.403);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transform: translateX(700px);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .notification #noti-text {
+  font-size: 2rem;
+  font-family: wal;
+  color: #b6b4b4;
+}
+section.fullelem.pomodoro-fullPage .pomo .container .notification.show {
+  transform: translateX(0);
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+section.fullelem.pomodoro-fullPage .pomo .container .pulsing {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+section.fullelem.DailyGoal-fullPage {
+  background: var(--ran);
+}
+section.fullelem.DailyGoal-fullPage h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: dance;
+  background-image: url("../goal.avif"); /* Or a gradient */
+  background-size: cover;
+  -webkit-background-clip: text; /* For Chrome/Safari */
+  background-clip: text;
+  color: transparent;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan {
+  display: flex;
+  flex-direction: column;
+  border: 6px solid var(--lgray);
+  margin: 2rem;
+  margin-top: 3rem;
+  outline: none;
+  border-radius: 1rem;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .formgrp {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .formgrp h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-family: areg;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .formgrp #new-task-form {
+  display: flex;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan input,
+section.fullelem.DailyGoal-fullPage .dailyPlan button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan #new-task-input {
+  flex: 1 1 0%;
+  background: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: var(--blue);
+  font-weight: 900;
+  font-family: CYR;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan #new-task-input::-moz-placeholder {
+  color: var(--light);
+  font-family: areg;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan #new-task-input::placeholder {
+  color: var(--light);
+  font-family: areg;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan #new-task-submit {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--pink), var(--purple));
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.4s ease;
+  font-family: rock;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan #new-task-submit:hover {
+  opacity: 0.6;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan #new-task-submit:active {
+  opacity: 0.8;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: areg;
+  color: var(--green);
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .content {
+  flex: 1 1 0%;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .content .text {
+  display: block;
+  color: var(--pri);
+  font-size: 1.5rem;
+  width: 100%;
+  transition: 0.4s;
+  font-family: CYR;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .content .text:not(:-moz-read-only) {
+  color: var(--lightPink);
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .content .text:not(:read-only) {
+  color: var(--lightPink);
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .action {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .action .edit {
+  background: linear-gradient(to right, var(--pink), var(--purple));
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .action .delete {
+  color: crimson;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .action button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.4s;
+  font-family: rock;
+  color: var(--tri2);
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .action button:hover {
+  opacity: 0.6;
+}
+section.fullelem.DailyGoal-fullPage .dailyPlan .taskInp .task-list #tasks .task .action button:active {
+  opacity: 0.8;
+}
+
+:root {
+  --pri: #1d1b1b;
+  --sec: #ffb4b4;
+  --tri1: #4f4d4de0;
+  --tri2: #aaaaaa;
+  --white: #fff;
+  --btn: #d5835d;
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #885cf6;
+  --ran: rgb(43, 42, 42);
+  --dpurple: #0840a7ad;
+  --lightPink: rgb(192, 136, 206);
+  --green: #26a5b9b7;
+  --lblue: rgb(33, 182, 205);
+  --lgray: #97989853;
+  --orange: rgb(225, 9, 9);
+  --lwhite: #f0e6e6;
+  --llwhite: #faeeee;
+  --yellow: #e4d60d;
+  --cyan: rgb(18, 221, 207);
+  --lred: #f0e6e6;
+  --crimson: hsl(348, 83%, 47%);
+  --red: #e40d0d;
+  --darkblack: #30303072;
+  --dgray: #ffffff5e;
+  --egreen: rgb(29, 95, 91);
+  --corn: hsl(219, 79%, 66%);
+  --agray: rgba(66, 64, 64, 0.648);
+  --aqua: #00ffff;
+  --bgrey: #4c4c4c43;
+  --nav: hsl(180, 54%, 65%);
+  --lorange: #ff6b6b;
+  --lblue: #4ecde4;
+  --sea: #2e8b57;
+  --lgrn: #8af0cc;
+  --llgrn: #a2e4cd;
+  --grayc:#777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: aeonik;
+  color: var(--white);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--ran);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 7rem;
+}/*# sourceMappingURL=style.css.map */

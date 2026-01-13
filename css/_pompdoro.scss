@@ -1,0 +1,245 @@
+@keyframes grid {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(40px, 40px);
+  }
+}
+section.fullelem.pomodoro-fullPage {
+  background-color: var(--ran);
+  overflow: hidden;
+
+  h2 {
+    background-image: url("../pomo.avif");
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: dance;
+  }
+  .pomo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .bg-grid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+      background-image: linear-gradient(
+          rbga(255, 255, 255, 0.1) 1px,
+          transparent 1px
+        ),
+        linear-gradient(90deg, rbga(255, 255, 255, 0.1) 1px, transparent 1px);
+      background-size: 40px 40px;
+      animation: grid 30s linear infinite;
+      -webkit-animation: grid 30s linear infinite;
+    }
+    .container {
+      text-align: center;
+      z-index: 5;
+      position: relative;
+      padding: 2rem;
+      .time-wrapper {
+        position: relative;
+        display: inline-block;
+
+        .progress-ring {
+          transform: rotate(-90deg);
+          width: 300px;
+          height: 300px;
+          .progress-ring-circle {
+            stroke: rgba(255, 255, 255, 0.1);
+            stroke-width: 6;
+            fill: transparent;
+            r: 140;
+            cx: 150;
+            cy: 150;
+          }
+          .progress-ring-progress {
+            stroke: var(--white);
+            stroke-width: 6;
+            stroke-dasharray: 911;
+            stroke-dashoffset: 911;
+            fill: transparent;
+            r: 140;
+            cx: 150;
+            cy: 150;
+            transition: stroke-dashoffset 1s ease;
+            stroke-linecap: round;
+            &.work {
+              stroke: var(--lorange);
+            }
+            &.break {
+              stroke: var(--lblue);
+            }
+          }
+        }
+        .timer-display {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .time {
+            font-size: 4rem;
+            font-weight: 200;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.5rem;
+            font-variant-numeric: tabular-nums;
+            font-family: CYR;
+          }
+          .session-time {
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--sea);
+            font-family: abold;
+          }
+        }
+      }
+      .controls {
+        display: flex;
+        gap: 1.4rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        .btn {
+          background: linear-gradient(to top left, #03030300, #ffffff00);
+          border: 2px solid rgba(123, 123, 123, 0.61);
+          color: var(--llgrn);
+          padding: 0.8rem 1.5rem;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 1.7rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          outline: none;
+          overflow: hidden;
+          position: relative;
+          font-weight: 900;
+          transition: all 0.3s ease;
+          font-family: wal;
+          filter: brightness(0.5);
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(5, 4, 4, 0.267);
+            transition: all 0.5s ease;
+          }
+          &:hover {
+            background: rgba(35, 76, 72, 0.438);
+            transform: translateY(-2px);
+          }
+          &:active {
+            scale: 0.9;
+          }
+        }
+        .btn:hover::before {
+          left: 100%;
+        }
+      }
+      .settings {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        margin: 2rem;
+        .setting-grp {
+          display: flex;
+          align-content: center;
+          flex-direction: column;
+          gap: 0.5em;
+          .setting-label {
+            font-size: 1.5em;
+            font-weight: 300;
+            opacity: 0.7;
+            text-transform: uppercase;
+            font-family: abold;
+
+            color: var(--tri2);
+          }
+          .setting-controls {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            .setting-btn {
+              background: rgba(255, 255, 255, 0.05);
+              border: none;
+              color: var(--lgrn);
+              width: 32px;
+              height: 32px;
+              border-radius: 0.5rem;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 2.5rem;
+              transition: all 0.3s ease;
+              font-family: wooden;
+              &:hover {
+                background: rgba(255, 255, 255, 0.1);
+              }
+            }
+            .setting-val {
+              font-size: 2rem;
+              max-width: 300;
+              font-weight: 300;
+              text-align: center;
+              font-family: areg;
+              color: #bcbcbcf9;
+            }
+          }
+        }
+      }
+      .notification {
+        position: fixed;
+        right: 2rem;
+        top: 14rem;
+        background: rgba(118, 118, 118, 0.403);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.3rem 0.6rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        transform: translateX(700px);
+        transition: all 0.3s ease;
+        z-index: 100;
+        #noti-text {
+          font-size: 2rem;
+          font-family: wal;
+          color: #b6b4b4;
+        }
+        &.show {
+          transform: translateX(0);
+        }
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      .pulsing {
+        animation: pulse 1s ease-in-out infinite;
+      }
+    }
+  }
+}

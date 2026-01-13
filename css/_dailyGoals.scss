@@ -1,0 +1,161 @@
+section.fullelem.DailyGoal-fullPage {
+  background: var(--ran);
+
+  h2 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: dance;
+    background-image: url("../goal.avif"); /* Or a gradient */
+    background-size: cover;
+    -webkit-background-clip: text; /* For Chrome/Safari */
+    background-clip: text;
+    color: transparent;
+  }
+  .dailyPlan {
+    display: flex;
+    flex-direction: column;
+    border: 6px solid var(--lgray);
+    margin: 2rem;
+    margin-top: 3rem;
+    outline: none;
+    border-radius: 1rem;
+    .formgrp {
+      flex: 1 1 0%;
+      padding: 2rem 1rem;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 1rem;
+        font-family: areg;
+      }
+      #new-task-form {
+        display: flex;
+      }
+    }
+    input,
+    button {
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+    }
+    #new-task-input {
+      flex: 1 1 0%;
+      background: var(--darker);
+      padding: 1rem;
+      border-radius: 1rem;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--blue);
+      font-weight: 900;
+      font-family: CYR;
+
+      &::placeholder {
+        color: var(--light);
+        font-family: areg;
+      }
+    }
+    #new-task-submit {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(to right, var(--pink), var(--purple));
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+
+      padding: 0.3rem 0.5rem;
+      transition: all 0.4s ease;
+      font-family: rock;
+
+      &:hover {
+        opacity: 0.6;
+      }
+      &:active {
+        opacity: 0.8;
+      }
+    }
+    .taskInp {
+      flex: 1 1 0%;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+
+      .task-list {
+        h4 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          font-family: areg;
+          color: var(--green);
+        }
+        #tasks {
+          .task {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--darkest);
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            .content {
+              flex: 1 1 0%;
+              .text {
+                display: block;
+                color: var(--pri);
+                font-size: 1.5rem;
+                width: 100%;
+                transition: 0.4s;
+                font-family: CYR;
+                &:not(:read-only) {
+                  color: var(--lightPink);
+                }
+              }
+            }
+            .action {
+              display: flex;
+              margin: 0 -0.5rem;
+              .edit {
+                background: linear-gradient(
+                  to right,
+                  var(--pink),
+                  var(--purple)
+                );
+                background-size: cover;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                cursor: pointer;
+              }
+              .delete {
+                color: crimson;
+              }
+              button {
+                cursor: pointer;
+                margin: 0 0.5rem;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                transition: 0.4s;
+                font-family: rock;
+                color: var(--tri2);
+                &:hover {
+                  opacity: 0.6;
+                }
+                &:active {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

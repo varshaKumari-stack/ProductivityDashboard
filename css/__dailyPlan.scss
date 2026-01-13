@@ -1,0 +1,57 @@
+section.fullelem.dailyPlan-fullPage {
+  background-color: var(--ran);
+
+  h2 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: dance;
+    background-image: url("../study.jfif"); /* Or a gradient */
+    background-size: cover;
+    -webkit-background-clip: text; /* For Chrome/Safari */
+    background-clip: text;
+    color: transparent;
+  }
+  .day-planner {
+    background: var(--tri1);
+    margin-top: 2rem;
+    height: 85%;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+    .day-time {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 1em;
+      width: 49.6%;
+      p {
+        position: absolute;
+        top: 12%;
+        left: 1%;
+        font-size: 1em;
+        color: var(--pri);
+        font-weight: 700;
+        font-family: CYR;
+      }
+      input {
+        padding: 1rem 2.5rem;
+        background-color: var(--tri2);
+        width: 100%;
+        padding-top: 1.9rem;
+        border-radius: 0.3em;
+        border: none;
+        font-size: 1.5em;
+        outline: none;
+        color:  var(--dpurple);
+        font-weight: 600;
+        font-family: wooden;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

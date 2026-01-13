@@ -1,0 +1,70 @@
+section.allelems header {
+  height: 40%;
+  width: calc(100% - 1.5rem);
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  background: url("../header.jpg");
+  background-size: cover;
+  position: fixed;
+
+  .header1 {
+    h2 {
+      font-size: 2rem;
+      font-family: areg;
+      color: var(--llwhite);
+    }
+    h3 {
+      font-size: 2rem;
+      font-family: areg;
+      color: var(--llwhite);
+    }
+    span {
+      color: var(--yellow);
+      font-family: areg;
+    }
+  }
+  .header2 {
+    h2 {
+      font-size: 4rem;
+      color: var(--white);
+      font-family: areg;
+    }
+    h3 {
+      font-size: 3rem;
+      text-align: right;
+      font-family: CYR;
+      color: var(--cyan);
+      font-weight: 300;
+    }
+
+    form {
+      text-align: right;
+      margin-top: 1rem;
+      input {
+        background-color: var(--lred);
+        padding: 0.5rem 2rem;
+        outline: none;
+        border: none;
+        border-radius: 0.3em;
+        font-family: cyr;
+        font-size: 1.4rem;
+        color: var(--crimson);
+        font-weight: 800;
+        -webkit-border-radius: 0.3em;
+        -moz-border-radius: 0.3em;
+        -ms-border-radius: 0.3em;
+        -o-border-radius: 0.3em;
+      }
+      h4 {
+        font-size: 2.5rem;
+        text-align: right;
+        font-family: areg;
+        color: var(--crimson);
+      }
+    }
+  }
+}

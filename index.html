@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Productivity Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <section class="allelems">
+          <nav>
+    <div class="nav-in">
+             <h1 class="work">Work Dashboard</h1>
+             <div class="links">
+               <a>Todo List</a>
+             <a>Daily Planner</a>
+              <a>Motivation</a>
+               <a>Pomodoro Timer</a>
+                <a>Daily Goals</a>
+             </div>
+           
+          <button class="theme">Change Theme</button>
+    </div>
+          </nav>
+<header>
+     <div class="header1">
+              <h2></h2>
+             <h3></h3>
+   <h3 class="humidity"></h3>
+   <h3 class="weather"></h3> 
+   <h3 class="feel-like"></h3>
+</div>
+<div class="header2">
+             <h3></h3>
+             <h2></h2>
+ <form> 
+    <input type="text" placeholder="Enter Location......">
+    <h4 class="country"></h4>
+  </form>
+  </div>
+</header>
+        <div class="allFeatures">
+           <div class="todo elem" id="0">
+           <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline>
+    
+    <source src="./video/todo.mp4" type="video/mp4">
+    
+  </video>
+          <h2>To-Do List</h2>
+        </div>
+        <div class="dailyPlan elem" id="1">
+          <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline>
+    
+    <source src="./video/daily.mp4" type="video/mp4">
+    
+  </video>
+
+          <h2>Daily Planner</h2>
+        </div>
+        <div class="motivation elem" id="2">
+                 <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline>
+    
+    <source src="./video/motivation.mp4" type="video/mp4">
+    
+  </video>
+          <h2>Motivation</h2>
+        </div>
+        <div class="pomodoro-time elem" id="3">
+          <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline>
+    
+    <source src="./video/pomodoro.mp4" type="video/mp4">
+    
+  </video>
+          <h2>Pomodoro Timer</h2>
+        </div>
+        <div class="daily-goals elem" id="4">
+           <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline>
+    
+    <source src="./video/goal.mp4" type="video/mp4">
+    
+  </video>
+          <h2>Daily Goals</h2>
+        </div>
+        </div>
+      </section>
+      <section class="fullelem todo-fullPage">
+        <button class="back" id="0">Previous</button>
+        <h2>Your WorkList<span>📝</span></h2>
+
+        <div class="todo-container">
+          <div class="addTask">
+            <form>
+              <input
+                type="text"
+                placeholder="Enter Task"
+                id="task-imp"
+                required
+              />
+              <textarea
+                placeholder="Enter Short Details..."
+                name=""
+                id=""
+                rows="7"
+                cols="20"
+                minlength="5"
+                maxlength="50"
+                required
+              ></textarea>
+              <div class="mark-imp">
+                <input type="checkbox" id="check" />
+                <label for="check">Mark As Important !!</label>
+              </div>
+              <button>Add Task</button>
+            </form>
+          </div>
+          <div class="allTask"></div>
+        </div>
+      </section>
+      <section class="fullelem dailyPlan-fullPage">
+        <button class="back" id="1">Previous</button>
+        <h2>Plan your day to be more productive</h2>
+        <div class="day-planner"></div>
+      </section>
+      <section class="fullelem motivation-fullPage">
+        <button class="back" id="2">Previous</button>
+        <h2>Spark of the Day</h2>
+        <div class="motive-wrapper">
+          <h2 id="head">Quote of the Day</h2>
+          <div class="quote">
+            <i class="fa-solid fa-quote-left left"></i>
+            <p></p>
+            <i class="fa-solid fa-quote-right right"></i>
+          </div>
+          <div class="auth"><p></p></div>
+        </div>
+      </section>
+      <section class="fullelem pomodoro-fullPage">
+        <button class="back" id="3">Previous</button>
+        <h2>Study Buddy Pomodoro Central</h2>
+        <div class="pomo">
+          <div class="bg-grid"></div>
+          <div class="container">
+            <div class="time-wrapper">
+              <svg class="progress-ring">
+                <circle class="progress-ring-circle"></circle>
+                <circle
+                  class="progress-ring-progress work"
+                  id="progress"
+                ></circle>
+              </svg>
+              <div class="timer-display">
+                <div class="time" id="time-display">25:00</div>
+                <div class="session-time" id="session-time">Work Session</div>
+              </div>
+            </div>
+            <div class="controls">
+              <button class="btn primary" id="startBtn">Start</button>
+              <button class="btn" id="pauseBtn">Pause</button>
+              <button class="btn" id="resetBtn">Reset</button>
+              <button class="btn" id="skipBtn">Skip</button>
+            </div>
+            <div class="settings">
+              <div class="setting-grp">
+                <div class="setting-label">Work</div>
+                <div class="setting-controls">
+                  <button class="setting-btn" id="Wminus">-</button>
+                  <div class="setting-val" id="work-time">25</div>
+                  <button class="setting-btn" id="Wplus">+</button>
+                </div>
+              </div>
+              <div class="setting-grp">
+                <div class="setting-label">Break</div>
+                <div class="setting-controls">
+                  <button class="setting-btn" id="bminus">-</button>
+                  <div class="setting-val" id="shortBreak">5</div>
+                  <button class="setting-btn" id="bplus">+</button>
+                </div>
+              </div>
+              <div class="setting-grp">
+                <div class="setting-label">Long Break</div>
+                <div class="setting-controls">
+                  <button class="setting-btn" id="lbminus">-</button>
+                  <div class="setting-val" id="longBreak">15</div>
+                  <button class="setting-btn" id="lbplus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="notification" id="notification">
+              <div id="noti-text">Completed Session!!!!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fullelem DailyGoal-fullPage">
+        <button class="back" id="4">Previous</button>
+        <h2>My Daily Plan</h2>
+        <div class="dailyPlan"> 
+        <div class="formgrp">
+          <h3> Primary Goals 🧿  </h3>
+          <form id="new-task-form">
+            <input
+              type="text"
+              id="new-task-input"
+              placeholder="What is your main focus for today?"
+             minlength="3" required
+            />
+            <input type="submit" id="new-task-submit" value="Add Task" />
+          </form>
+        </div>
+        <div class='taskInp'> 
+        <div class="task-list">
+          <h4> Daily Target🎯</h4>
+          <div id="tasks">
+            
+           
+          </div>
+        </div>
+        </div>
+        </main>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

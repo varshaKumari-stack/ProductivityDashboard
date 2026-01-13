@@ -1,0 +1,32 @@
+@use "./nav";
+@use "./Section";
+@use "./header";
+@use "./fullElem";
+@use "./todo";
+@use "./_dailyPlan";
+@use "./motivation";
+@use "./font";
+@use "./pompdoro";
+@use "./dailyGoals";
+@use "./roots";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: aeonik;
+  color: var(--white);
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--ran);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  // background-color: rgb(43, 42, 42);
+  padding-top: 7rem;
+}

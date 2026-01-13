@@ -1,0 +1,162 @@
+section.fullelem.todo-fullPage {
+ 
+  background-color:  var(--ran);
+  h2 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: dance;
+    background-image: url("../todo.avif");
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+  }
+  .todo-container {
+    height: 80%;
+    width: 100%;
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .addTask {
+      width: 33%;
+      height: 100%;
+      background: var(--tri1);
+      border-radius: 1rem;
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 2rem;
+        #task-imp,
+        textarea,
+        button {
+          padding: 10px 20px;
+          width: 100%;
+          font-size: 1.7em;
+          border-radius: 0.5em;
+          border: none;
+
+          outline: none;
+          background: var(--tri2);
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+        #task-imp,
+        textarea {
+          color: #2f5c5d;
+          font-family: areg;
+        }
+
+        button {
+          background: var(--sec);
+          color: var(--tri1);
+          transition: all ease 0.3s;
+          font-family: rock;
+
+          &:active {
+            scale: 0.9;
+          }
+        }
+        .mark-imp {
+          display: flex;
+          align-items: center;
+          padding: 5px;
+          gap: 0.7em;
+          width: 100%;
+          margin-bottom: 20px;
+
+          input {
+            width: 20px;
+            height: 20px;
+          }
+          label {
+            font-size: 1.2rem;
+            font-family: CYR;
+          }
+        }
+      }
+    }
+    .allTask {
+      width: 65%;
+      height: 100%;
+      background: var(--tri1);
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 2rem;
+      .task {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        background: var(--tri2);
+        padding: 1rem;
+        border-radius: 0.5em;
+
+        .detail {
+          position: relative;
+
+          summary {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--tri1);
+            margin-bottom: 1rem;
+            font-family: abold;
+          }
+          p {
+            font-size: 1rem;
+            color: rgba(8, 55, 74, 0.692);
+            position: absolute;
+            left: 1rem;
+            right: -1rem;
+            bottom: -1.3rem;
+            white-space: nowrap;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+            font-family: CYR;
+          }
+        }
+        span {
+          padding: 0.2rem 0.4rem;
+          background: var(--btn);
+          border-radius: 0.5em;
+          font-size: 1.3em;
+          color: var(--white);
+          font-weight: 800;
+
+          &.true {
+            opacity: 1;
+          }
+
+          &.false {
+            opacity: 0;
+          }
+        }
+      }
+
+      button {
+        padding: 1rem 1.3rem;
+        background-color: var(--grayc);
+        border-radius: 0.5rem;
+        outline: none;
+        border: none;
+        font-size: 1.3em;
+        color: var(--white);
+        font-weight: 700;
+        transition: all ease 0.3s;
+        margin-left: 1rem;
+        font-family: areg;
+        &:active {
+          scale: 0.9;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+section.fullelem.motivation-fullPage {
+  background-color: var(--ran);
+
+  h2 {
+    margin-top: -1rem;
+    font-size: 6rem;
+    text-transform: capitalize;
+    background-image: url("../quote.jfif"); /* Or a gradient */
+    background-size: cover;
+    -webkit-background-clip: text; /* For Chrome/Safari */
+    background-clip: text;
+    color: transparent;
+    font-family: dance;
+  }
+  .motive-wrapper {
+    width: 50%;
+    height: 350px;
+    background: linear-gradient(to top left, var(--darkblack), var(--dgray));
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 1rem;
+    padding: 1rem;
+    animation: box 6s ease-in-out infinite;
+    box-shadow: 0px 0px 16px var(--egreen), 0px 0px 16px var(--corn);
+
+    #head {
+      font-size: 4rem;
+      padding: 0.2rem;
+      text-align: center;
+      background: var(--tri2);
+      color: var(--agray);
+      border-radius: 1rem;
+      font-family: wal;
+      margin-top: 0.1rem;
+    }
+    .quote {
+      margin-top: 1rem;
+      position: relative;
+      p {
+        font-size: 1.3rem;
+        color: var(--sec);
+        font-weight: 600;
+        position: relative;
+        padding-left: 2rem;
+        font-family: areg;
+      }
+      .left {
+        font-size: 1rem;
+      }
+      .right {
+        position: absolute;
+      }
+    }
+    .auth {
+      position: relative;
+
+      p {
+        font-family: rock;
+        position: absolute;
+        right: 0%;
+        bottom: -6rem;
+        font-size: 2rem;
+        color: var(--aqua);
+        background: var(--tri1);
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background: var(--egreen);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(6px);
+    top: 13%;
+    left: 20%;
+
+    animation: animate 6s ease-in-out infinite alternate;
+  }
+  &::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background:  var(--corn);
+    border-radius: 50%;
+    position: absolute;
+    right: 18%;
+    bottom: 15%;
+    filter: blur(6px);
+    animation: animate 6s ease-in-out infinite alternate;
+  }
+}

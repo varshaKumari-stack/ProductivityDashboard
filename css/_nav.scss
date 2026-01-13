@@ -1,0 +1,84 @@
+section.allelems nav {
+  position: fixed;
+  top: 3%;
+  width: calc(100% - 2rem);
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  background-color: var(--bgrey);
+  .nav-in {
+    padding: 1rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .work {
+      font-family: cyr;
+      font-size: 2rem;
+      text-shadow: 2px 2px 3px #6b6a6a;
+      -webkit-text-stroke: 1px #f0f4f5bb;
+      color: transparent;
+    }
+    button {
+      padding: 1rem 1.5rem;
+      border: none;
+      outline: none;
+
+      font-size: 1.3rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      background-color: var(--sec);
+      color: var(--pri);
+      font-family: cyr;
+      font-weight: 600;
+      transition: all 0.5s ease;
+
+      &:active {
+        color: var(--gray);
+        scale: 0.8;
+      }
+      &:hover {
+        background-color: var(--darkest);
+        color: var(--sec);
+      }
+    }
+    .links {
+      gap: 1.5rem;
+      display: flex;
+      position: relative;
+    }
+    a {
+      position: relative;
+      text-decoration: none;
+      font-size: 1.7em;
+      font-family: cyr;
+      color: var(--nav);
+      font-weight: 500;
+      padding: 8px 0;
+    }
+    a::before,
+    a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #6b6a6a;
+      transition: all 0.5s ease;
+    }
+    a::before {
+      top: 0;
+      left: 0;
+    }
+    a::after {
+      bottom: 0;
+      right: 0;
+    }
+
+    a:hover::before,
+    a:hover::after {
+      width: 100%;
+    }
+    :hover {
+      color: #c6c6c6;
+    }
+  }
+}
