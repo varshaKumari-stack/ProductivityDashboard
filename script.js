@@ -442,16 +442,16 @@ function Weather() {
     CountryName.innerHTML = `${data.name},${data.sys.country}`;
     feelLikes.innerHTML = `Feels-like <span> ${data.main.feels_like}</span>`;
   }
- Form.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    e.preventDefault(); // reload stop
+  Form.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // reload stop
 
-    if (Form.value.trim() !== "") {
-      weatherAPI(Form.value.trim());
-      Form.value = "";
+      if (Form.value.trim() !== "") {
+        weatherAPI(Form.value.trim());
+        Form.value = "";
+      }
     }
-  }
-});
+  });
 
   function getDate() {
     let WeekDay = [
@@ -508,15 +508,8 @@ function ThemeChange() {
   let themeColor = document.querySelector(".theme");
 
   themeColor.addEventListener("click", () => {
-    const min = 30;
-    const max = 150;
-    const r = Math.floor(Math.random() * (max - min + 1)) + min;
-    const g = Math.floor(Math.random() * (max - min + 1)) + min;
-    const b = Math.floor(Math.random() * (max - min + 1)) + min;
-
-    const randomColor = `rgb(${r}, ${g}, ${b})`;
     if (flag === 0) {
-      document.documentElement.style.setProperty("--ran", randomColor);
+      document.documentElement.style.setProperty("--ran", " #1d1b1b");
       document.documentElement.style.setProperty("--llwhite", "#018790");
       document.documentElement.style.setProperty("--tri2", "#eee");
       document.documentElement.style.setProperty("--darkest", "#393E46");
